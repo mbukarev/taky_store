@@ -100,6 +100,12 @@ function login(){
                 $('#userLink').attr('href', '/user/');
                 $('#userLink').html(data['displayName']);
                 $('#userBox').show();
+
+                $('#name').val(data['name']);
+                $('#phone').val(data['phone']);
+                $('#adress').val(data['adress']);
+
+                $('#btnSaveOrder').show();
             } else {
                 alert(data['message']);
             }
