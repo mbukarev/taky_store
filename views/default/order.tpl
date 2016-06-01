@@ -77,8 +77,20 @@
         <div id="registerBox"> или <br>
             <div class="menuCaption">Регистрация нового пользователя</div>
             email:* <br>
-            <input type="text" id="email" name="">
+            <input type="text" id="email" name="email" value=""><br>
+            пароль:* <br>
+            <input type="password" id="pwd1" name="pwd1" value=""><br>
+            повторите пароль:* <br>
+            <input type="password" id="pwd2" name="pwd2" value=""><br>
+
+            Имя:* <input type="text" id="name" name="name" value=""><br>
+            Тел*: <input type="text" id="phone" name="phone" value=""><br>
+            Адрес*: <input type="text" id="adress" name="adress" value=""><br>
+
+            <input type="button" onclick="registerNewUser();" value="Зарегестрироваться"><br>
         </div>
+        {$buttonClass = "class='hideme'"}
 
     {/if}
+    <input {$buttonClass} id="btnSaveOrder" type="button" value="Оформить заказ" onclick="saveOrder();">
 </form>
